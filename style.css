@@ -1,0 +1,317 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+}
+
+.navbar{
+    background: linear-gradient(to right,#1d6d8d, #000d20);
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.logo{
+    height: 100%;
+    width: 15vw;
+    background: url(./images/Logo-Favcollege.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 2%;
+    float: left;
+}
+
+
+.navitems{
+    float: right;
+    position: relative;
+    top: 1vh;
+    margin-right: 2vw;
+}
+
+.button{
+    display: inline-block;
+    padding: 10px;
+    margin: 2px;
+    color: aliceblue;
+    transition: background 1s;
+}
+
+.banner{
+    height: 90vh;
+    background: url(./images/BG.png);
+    margin-top: 10vh;
+}
+
+.vector{
+    height: 50vh;
+    width: 30vw;
+    float: right;
+    margin-top: 20vh;
+    background: url(./images/Vector-student.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 5vw;
+}
+
+.tagline{
+    float: left;
+    color: aliceblue;
+    display: inline;
+    margin-left: 5vw;
+    margin-top: 35vh;
+    letter-spacing: 1.5px;
+    font-size: 28px;
+}
+
+.tagline .special{
+    color: orangered;
+}
+
+.explorebutton{
+    color: aliceblue;
+    border: 1px solid orangered;
+    display: inline;
+    padding: 8px 15px;
+    margin-top: 4px;
+    display: inline-block;
+    border-radius: 12%;
+    transition: background 1s;
+}
+
+.explorebutton:hover{
+    background: orangered;
+}
+
+.button:hover{
+    background: orangered;
+}
+
+#Active{
+    background: orangered;
+}
+
+.content{
+    height: 90vh;
+    width: 100%;
+    background: linear-gradient(to bottom right,#ee3b23, #f723da);
+}
+
+.contentbox{
+    height: 60vh;
+    width: 60vw;
+    transform: translate(35%,20%);
+}
+
+.contenthead{
+    height: fit-content;
+    width: fit-content;
+    color: aliceblue;
+    font-size: 30px;
+    transform: translate(30%, 30%);
+}
+
+.links{
+    transform: translate(30%, 20%);
+    width: fit-content;
+    height: fit-content;
+}
+
+.links a{
+    text-decoration: none;
+}
+
+.link{
+    font-size: 25px;
+    color: aliceblue;
+    padding: 5px 15px;
+    border: 2px solid aliceblue;
+    border-radius: 15%;
+    display: inline-block;
+    margin-left: 15px;
+    margin: 5px;
+    transition-property: background,color,border-color;
+    transition-duration: 0.8s;
+}
+
+.link:hover{
+    background: #011432;
+    color: #f33b22;
+    border-color: #f33b22;
+}
+
+.animation{
+    height: 100px;
+    width: 100px;
+    background: url(./images/animated.png);
+    background-size: cover;
+    position: relative;
+    border-radius: 50%;
+    margin-left: 5%;
+    animation-name: test;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes test {
+    0% {bottom: 0;}
+    50% {bottom: 300px; transform: rotate(0deg);}
+    60% {bottom: 300px; transform: rotate(180deg);}
+    90% {bottom: 0; transform: rotate(180deg);}
+    100% {bottom: 0px; transform: rotate(360deg);}
+
+}
+.contentbox2{
+    height: 120vh;
+    width: 100vw;
+    background: linear-gradient(to bottom right, #ff7b2e, #850021);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contenthead2{
+    color: aliceblue;
+    font-size: 2.5em;
+    padding: 15px 5px;
+}
+
+.courses{
+    height: 25%;
+    width: 75%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course{
+    height: 100%;
+    width: 30%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.courseicon{
+    height: 50%;
+    width: 43%;
+    border-radius: 50%;
+}
+
+#eng{
+    background: url(./images/engineers.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#doctor{
+    background: url(./images/doctor.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#law{
+    background: url(./images/law.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.blogs{
+    height: 75vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to bottom right, #3489ed, #7abf23);
+    text-decoration: none;
+}
+
+.blog{
+    height: 75%;
+    width: 22%;
+    background: aliceblue;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.blogimage{
+    height: 30%;
+    width: 50%;
+    background: url(./images/mountains.jpg);
+    margin-top: 15%;
+    margin-bottom: 2%;
+}
+
+.blogcontent{
+    height: 50%;
+    width: 70%;
+}
+
+.conclusion{
+    height: 55vh;
+    background: linear-gradient(to bottom right, aliceblue, #ffa4b3);
+}
+
+.main{
+    height: 80%;
+    display: flex;
+}
+
+.about{
+    height: 100%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    text-decoration: underline;
+    justify-content: center;
+    font-size: 1.5em;
+    margin-left: 10px;
+}
+
+.interact{
+    height: 100%;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+.reachus{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.socialmedias{
+    display: flex;
+    flex-direction: column;
+}
+
+.socialbox{
+    height: 25px;
+    width: 80px;
+    border: 2px solid gray;
+    border-radius: 5%;
+}
+
+.tothetop{
+    text-decoration: none;
+    color: #000d20;
+}
